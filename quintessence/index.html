@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Quintessence Home</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/faviconQ.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+      rel="stylesheet" />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <style>
+      .large-image .img-fluid {
+        height: 240px;
+      }
+
+      .team-img {
+        width: 100%;
+        height: 350px; /* Atur tinggi gambar sesuai kebutuhan */
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0"
+      id="home">
+      <a
+        href="index.html"
+        class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <h2 class="m-0 text-success">
+          <i class="fa fa-stethoscope me-3"></i>Quintessence
+        </h2>
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler me-4"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="login.php" class="nav-item nav-link">Medical Check-up</a>
+          <div class="nav-item dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              >Data Provinsi</a
+            >
+            <div class="dropdown-menu fade-down m-0">
+              <a href="data-perokok.php" class="dropdown-item">Perokok aktif</a>
+              <a href="data-covid.php" class="dropdown-item">Covid-19</a>
+              <a href="data-imunisasi.php" class="dropdown-item">Imunisasi</a>
+              <a href="data-distribusi.php" class="dropdown-item"
+                >Distribusi Tenaga Kerja</a
+              >
+              <a href="data-hiv.php" class="dropdown-item">HIV</a>
+            </div>
+          </div>
+          <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+        <a
+          href="login_admin.php"
+          class="btn btn-success py-4 px-lg-5 d-none d-lg-block"
+          >Admin Page<i class="fa fa-arrow-right ms-3"></i
+        ></a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+      <div class="owl-carousel header-carousel position-relative">
+        <div class="owl-carousel-item position-relative">
+          <img class="img-fluid" src="img/hero.jpg" alt="" />
+          <div
+            class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+            style="background: rgba(24, 29, 56, 0.7)">
+            <div class="container">
+              <div class="row justify-content-start">
+                <div class="col-sm-10 col-lg-8">
+                  <h5
+                    class="text-primary text-uppercase mb-3 animated slideInDown">
+                    Kesehatan
+                  </h5>
+                  <h1 class="display-3 text-white animated slideInDown">
+                    Your Health, Your Wealth
+                  </h1>
+                  <p class="fs-5 text-white mb-4 pb-2">
+                    "Kesehatan adalah investasi yang paling berharga, karena
+                    tanpa kesehatan, segala hal lain dalam hidup menjadi tidak
+                    berarti.
+                  </p>
+                  <a
+                    href="#opening"
+                    class="btn btn-success py-md-3 px-md-5 me-3 animated slideInLeft"
+                    >Read More</a
+                  >
+                  <a
+                    href="login.php"
+                    class="btn btn-primary py-md-3 px-md-5 animated slideInRight"
+                    >Join Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="owl-carousel-item position-relative">
+          <img class="img-fluid" src="img/hero1.jpg" alt="" />
+          <div
+            class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+            style="background: rgba(24, 29, 56, 0.7)">
+            <div class="container">
+              <div class="row justify-content-start">
+                <div class="col-sm-10 col-lg-8">
+                  <h5
+                    class="text-primary text-uppercase mb-3 animated slideInDown">
+                    Keselamatan
+                  </h5>
+                  <h1 class="display-3 text-white animated slideInDown">
+                    Invest in Health, Reap the Rewards
+                  </h1>
+                  <p class="fs-5 text-white mb-4 pb-2">
+                    Sehat bukanlah tujuan hidup, tetapi merupakan fondasi yang
+                    memungkinkan kita menjalani hidup dengan lebih bermakna.
+                  </p>
+                  <a
+                    href="#opening"
+                    class="btn btn-success py-md-3 px-md-5 me-3 animated slideInLeft"
+                    >Read More</a
+                  >
+                  <a
+                    href="login.php"
+                    class="btn btn-primary py-md-3 px-md-5 animated slideInRight"
+                    >Join Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="owl-carousel-item position-relative">
+          <img class="img-fluid" src="img/hero2.jpg" alt="" />
+          <div
+            class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+            style="background: rgba(24, 29, 56, 0.7)">
+            <div class="container">
+              <div class="row justify-content-start">
+                <div class="col-sm-10 col-lg-8">
+                  <h5
+                    class="text-primary text-uppercase mb-3 animated slideInDown">
+                    Kematian
+                  </h5>
+                  <h1 class="display-3 text-white animated slideInDown">
+                    Empowering Health for a Brighter Future
+                  </h1>
+                  <p class="fs-5 text-white mb-4 pb-2">
+                    Kesehatan bukanlah hanya sekedar keadaan tubuh yang bebas
+                    dari penyakit, tetapi juga keadaan jiwa dan pikiran yang
+                    seimbang
+                  </p>
+                  <a
+                    href="#opening"
+                    class="btn btn-success py-md-3 px-md-5 me-3 animated slideInLeft"
+                    >Read More</a
+                  >
+                  <a
+                    href="login.php"
+                    class="btn btn-primary py-md-3 px-md-5 animated slideInRight"
+                    >Join Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5" id="opening">
+      <div class="container text-center">
+        <div class="row g-5">
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-item text-center pt-3">
+              <div class="p-4">
+                <i class="fa fa-3x fa-user-nurse text-success mb-4"></i>
+                <h5 class="mb-3">Distribusi NAKES</h5>
+                <p>Data Jumlah Tenaga Kesehatan di Setiap Provinsi</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-item text-center pt-3">
+              <div class="p-4">
+                <i class="fa fa-3x fa-briefcase-medical text-success mb-4"></i>
+                <h5 class="mb-3">Mengecek Kesehatan</h5>
+                <p>
+                  Pengoptimalan Berat Badan, Tekanan darah, dan Kesehatan Mental
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item text-center pt-3">
+              <div class="p-4">
+                <i class="fa fa-3x fa-fire text-success mb-4"></i>
+                <h5 class="mb-3">Data Perokok Aktif</h5>
+                <p>Jumlah Perokok Aktif di Setiap Provinsi</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="service-item text-center pt-3">
+              <div class="p-4">
+                <i class="fa fa-3x fa-bed text-success mb-4"></i>
+                <h5 class="mb-3">Data HIV</h5>
+                <p>Jumlah Pengidap HIV di setiap Provinsi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="row g-5">
+          <div data-wow-delay="0.3s">
+            <div class="about-container wow fadeInUp" data-wow-delay="0.2s">
+              <h6 style="color: green">About Us</h6>
+              <h1 class="mb-4">Welcome to Quintessence</h1>
+              <p>
+                Kami adalah sebuah platform kesehatan yang menyediakan layanan
+                cek kesehatan mental, cek BMI, dan cek tekanan darah.
+              </p>
+              <p>
+                Di samping itu, kami juga menampilkan informasi penting terkait
+                kesehatan di Indonesia, termasuk data HIV, COVID-19, imunisasi,
+                distribusi tenaga kesehatan, dan jumlah perokok aktif di setiap
+                provinsi.
+              </p>
+              <p>
+                Fitur cek kesehatan mental membantu Anda memahami dan mengelola
+                kesehatan mental, sedangkan cek BMI membantu memantau indeks
+                massa tubuh (BMI) dan memahami status kesehatan tubuh. Cek
+                tekanan darah membantu memonitor tekanan darah dan menjaga
+                kesehatan jantung.
+              </p>
+              <p>
+                Data HIV, COVID-19, imunisasi, distribusi tenaga kesehatan, dan
+                jumlah perokok aktif memberikan informasi lengkap tentang
+                kondisi kesehatan masyarakat di Indonesia.
+              </p>
+              <p>
+                Kami berkomitmen untuk menyajikan data yang akurat dan terkini,
+                bekerja sama dengan lembaga-lembaga kesehatan yang berwenang.
+              </p>
+              <p>
+                Bergabunglah dengan kami sekarang dan nikmati fitur-fitur
+                kesehatan kami serta akses data kesehatan terkini yang kami
+                sediakan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Categories Start -->
+    <div class="container-xxl py-5 category">
+      <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h6 class="section-title bg-white text-center text-success px-3">
+            Data
+          </h6>
+          <h1 class="mb-5">Kategori Data</h1>
+        </div>
+        <div class="row g-3">
+          <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
+            <a
+              class="position-relative d-block overflow-hidden"
+              href="data-perokok.php">
+              <img class="img-fluid" src="img/rokok.jpg" alt="" />
+              <div
+                class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                style="margin: 1px">
+                <h5 class="m-0">Perokok Aktif</h5>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+            <a
+              class="position-relative d-block overflow-hidden large-image"
+              href="data-distribusi.php">
+              <img class="img-fluid" src="img/nakes.jpg" alt="" />
+              <div
+                class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                style="margin: 1px">
+                <h5 class="m-0">Tenaga Kesehatan</h5>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+            <a
+              class="position-relative d-block overflow-hidden large-image"
+              href="data-covid.php">
+              <img class="img-fluid" src="img/covid.jpg" alt="" />
+              <div
+                class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                style="margin: 1px">
+                <h5 class="m-0">Covid-19</h5>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 col-md-6 wow zoomIn" data-wow-delay="0.7s">
+            <a
+              class="position-relative d-block overflow-hidden"
+              href="data-imunisasi.php">
+              <img class="img-fluid" src="img/imunisasi.jpg" alt="" />
+              <div
+                class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                style="margin: 1px">
+                <h5 class="m-0">Imunisasi</h5>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+            <a
+              class="position-relative d-block h-100 overflow-hidden"
+              href="data-hiv.php">
+              <img
+                class="img-fluid position-absolute w-100 h-100"
+                src="img/hiv.jpeg"
+                alt=""
+                style="object-fit: cover" />
+              <div
+                class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                style="margin: 1px">
+                <h5 class="m-0">HIV</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h5 class="bg-white text-center text-dark px-1">Greeting From</h5>
+          <h1 class="mb-5">Our Team</h1>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="team-item bg-light">
+              <div class="overflow-hidden">
+                <img class="img-fluid team-img" src="img/arul.jpeg" alt="" />
+              </div>
+              <div
+                class="position-relative d-flex justify-content-center"
+                style="margin-top: -23px">
+                <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                  <a
+                    class="btn btn-sm-square btn-success mx-1"
+                    target="_blank"
+                    href="https://www.youtube.com/@arulzyoutube8259"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                  <a
+                    class="btn btn-sm-square btn-success mx-1"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/imam-chalish-rafidhul-haque-673746256/"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a
+                    class="btn btn-sm-square btn-success mx-1"
+                    target="_blank"
+                    href="https://www.instagram.com/arulllllllllll/?hl=id"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="text-center p-4">
+                <h5 class="mb-0">Imam Chalish R H</h5>
+                <small>IT Manager</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="team-item bg-light">
+              <div class="overflow-hidden">
+                <img class="img-fluid team-img" src="img/ridho.jpg" alt="" />
+              </div>
+              <div
+                class="position-relative d-flex justify-content-center"
+                style="margin-top: -23px">
+                <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                  <a
+                    class="btn btn-sm-square btn-success mx-1"
+                    target="_blank"
+                    href="https://www.youtube.com"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                  <a
+                    class="btn btn-sm-square btn-success mx-1"
+                    target="_blank"
+                    href="https://www.linkedin.com"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a
+                    class="btn btn-sm-square btn-success mx-1"
+                    target="_blank"
+                    href="https://www.instagram.com/ridhonaufaldy/?igshid=NGExMmI2YTkyZg%3D%3D"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">Ridho Alif Naufaldy</h5>
+                <small>Software Architect</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="team-item bg-light">
+              <div class="overflow-hidden">
+                <img class="img-fluid team-img" src="img/rifa.jpg" alt="" />
+              </div>
+              <div
+                class="position-relative d-flex justify-content-center"
+                style="margin-top: -23px">
+                <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                  <a
+                    class="btn btn-sm-square btn-success mx-1"
+                    target="_blank"
+                    href="https://www.youtube.com"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                  <a
+                    class="btn btn-sm-square btn-success mx-1"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/rifa-sania-162575279/"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a
+                    class="btn btn-sm-square btn-success mx-1"
+                    target="_blank"
+                    href="https://www.instagram.com/rfasn_"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">Rifa Sania</h5>
+                <small>Information Security Engineer</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="team-item bg-light">
+              <div class="overflow-hidden">
+                <img class="img-fluid team-img" src="img/syifa.jpg" alt="" />
+              </div>
+              <div
+                class="position-relative d-flex justify-content-center"
+                style="margin-top: -23px">
+                <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                  <a
+                    class="btn btn-sm-square btn-success mx-1"
+                    target="_blank"
+                    href="https://www.youtube.com"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                  <a
+                    class="btn btn-sm-square btn-success mx-1"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/syifa-azzahra-4726a9265"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a
+                    class="btn btn-sm-square btn-success mx-1"
+                    target="_blank"
+                    href="https://www.instagram.com/syifaazzaahra_/"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">Syifa Azzahra</h5>
+                <small>Data Scientist</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container">
+        <div class="text-center">
+          <h6 class="section-title bg-white text-center text-primary px-3">
+            Testimonial
+          </h6>
+          <h1 class="mb-5">As The Expert Says...</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel position-relative">
+          <div class="testimonial-item text-center">
+            <img
+              class="border rounded-circle p-2 mx-auto mb-3"
+              src="img/fauci.jpg"
+              style="width: 80px; height: 80px" />
+            <h5 class="mb-0">Dr. Anthony Fauci</h5>
+            <p>Direktur Institut Nasional Alergi dan Penyakit Menular AS</p>
+            <div class="testimonial-text bg-light text-center p-4">
+              <p class="mb-0">
+                Fitur kesehatan yang luar biasa! Saya terkesan dengan keunggulan
+                dan manfaatnya. Pengelolaan kesehatan jadi lebih mudah dan
+                praktis. Terima kasih tim!
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-item text-center">
+            <img
+              class="border rounded-circle p-2 mx-auto mb-3"
+              src="img/gupta.jpg"
+              style="width: 80px; height: 80px" />
+            <h5 class="mb-0">Dr. Sanjay Gupta</h5>
+            <p>Dokter, jurnalis medis, dan kontributor kesehatan CNN</p>
+            <div class="testimonial-text bg-light text-center p-4">
+              <p class="mb-0">
+                Website ini menawarkan fitur kesehatan yang luar biasa. Saya
+                senang bisa mengakses informasi dan mengikuti perkembangan
+                kesehatan saya dengan mudah. Terima kasih!
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-item text-center">
+            <img
+              class="border rounded-circle p-2 mx-auto mb-3"
+              src="img/goodal.jpg"
+              style="width: 80px; height: 80px" />
+            <h5 class="mb-0">Dr. Jane Goodall</h5>
+            <p>Primatologis dan ahli konservasi lingkungan</p>
+            <div class="testimonial-text bg-light text-center p-4">
+              <p class="mb-0">
+                Website ini menawarkan fitur kesehatan yang luar biasa. Saya
+                senang bisa mengakses informasi dan mengikuti perkembangan
+                kesehatan saya dengan mudah. Terima kasih!
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-item text-center">
+            <img
+              class="border rounded-circle p-2 mx-auto mb-3"
+              src="img/kaku.jpg"
+              style="width: 80px; height: 80px" />
+            <h5 class="mb-0">Dr. Michio Kaku</h5>
+            <p>
+              Fisikawan teoritis dan penulis buku tentang sains dan kesehatan
+            </p>
+            <div class="testimonial-text bg-light text-center p-4">
+              <p class="mb-0">
+                Saya sangat terkesan dengan fitur kesehatan yang diberikan oleh
+                website ini. Informasi dan pemantauan kesehatan menjadi lebih
+                praktis. Terima kasih tim atas dedikasinya!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Footer Start -->
+    <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+      <div class="container text-center">
+        <small>Copyright &copy; Quintessence</small>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-success btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
